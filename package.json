@@ -1,0 +1,19 @@
+{
+  "name": "layout_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericjreilly1983/space-explore.git"
+  },
+  "author": "eric reilly",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericjreilly1983/space-explore/issues"
+  },
+  "homepage": "https://github.com/ericjreilly1983/space-explore#readme"
+}
