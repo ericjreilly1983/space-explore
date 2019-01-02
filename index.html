@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Space Exploration by Eric</title>
+	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Orbitron|Roboto+Mono" rel="stylesheet">
+
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
 
@@ -18,7 +20,7 @@
 
 	/*menu button*/
 	
-	label:first-of-type {
+	#menu-icon {
 		display: none;
 		color: blue;
 		position: absolute;
@@ -49,6 +51,7 @@
 		width: 400px;
 		transition: 1s all;
 		color: blue;
+		font-family: 'Major Mono Display', monospace;
 	}
 
 	aside ul {
@@ -62,6 +65,8 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
+		font-family: 'Major Mono Display', monospace;
+
 	}
 	header ul li {
 		padding: 1em;
@@ -77,6 +82,16 @@
 	div.heading h1 {
 		text-align: center;
 		padding-top: 25vh;
+		font-family: 'Orbitron', sans-serif;
+		font-size: 5em;
+	}
+
+	main, section, footer {
+		font-family: 'Roboto Mono', monospace;
+	}
+
+	main h3 {
+		text-transform: uppercase;
 	}
 
 	main {
@@ -130,9 +145,39 @@
 		padding-right: 5px;
 	}
 
+	#subscribe {
+		background-color: gray;
+	}
+
+
+	#subscribe form {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		max-width: 960px;
+		margin: 0 auto;
+		grid-gap: .3em;
+	}
+	#subscribe input, #subscribe button {
+		width: 75%;
+		line-height: 2em;
+		border-radius: 7px;
+	}
+
+	#subscribe label {
+		text-align: center;
+		font-style: italic;
+		line-height: 2em;
+	}
+	#subscribe form input, #subscribe form label {
+		/*max-width: 25vw;*/
+	}
+
+
+
 	footer {
 		position: sticky;
-		bottom: 0px;
+		top: 0;
+		background-color: blue;
 	}
 
 @media only screen and (max-width: 960px) {
@@ -146,7 +191,7 @@
   	grid-template-columns: 1fr;
   }
 
-  label:first-of-type {
+  #menu-icon {
   	display: inline;
   }
 
@@ -166,7 +211,7 @@
 	</ul>
 </header>
 
-<label for = "menu"><i class="fas fa-plus"></i></label>
+<label for = "menu" id= "menu-icon"><i class="fas fa-plus"></i></label>
 <input type="checkbox" id="menu">
 
 <aside>
@@ -232,6 +277,23 @@
 		</ul>
 	</div>
 </main>
+<section id = "subscribe">
+	<h2>Subscribe</h1>
+	<form>
+		<label class = "subscribe_label">First Name:</label>
+		<input type="text" name="" placeholder = "First Name">
+		<label class = "subscribe_label">Last Name:</label>
+		<input type="text" name="" placeholder = "Last Name">
+		<label class = "subscribe_label">Email:</label>
+		<input type="email" name="" placeholder= "Email">
+		<label class = "subscribe_label">Password</label>
+		<input type="password" name="" placeholder = "Enter Password" required placeholder = "Choose Password" minlength = "8"  pattern="(?=.*\d)(?=.*[\W_]).{8,}" >
+		<label class = "subscribe_label">Confirm Password</label>
+		<input type="password" placeholder="Re-Enter Password" required>
+		<div></div>
+		<button>Subscribe</button>
+	</form>
+</section>
 <footer>
 	<span>Copyright 2019</span>
 </footer>
