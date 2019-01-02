@@ -32,8 +32,10 @@
 .input-group > span {
 	background: gray;
 	color: black;
-	padding: 0 3px 0 3px;
+	margin-right: 5px;
+	min-width: 16px;
 }
+
 
 .input-group > input[type="email"] {
 	flex: 5;
@@ -41,8 +43,15 @@
 
 .input-group>button{
 	flex-grow: 1;
+	left: 5px;
 	vertical-align: middle;
 	text-align: center;
+	transition: 0.5s all;
+	min-width: 24px;
+}
+
+.input-group>button:hover {
+	background-color: #66aeff;
 }
 
 .input-group .input-group-label {
