@@ -1,0 +1,19 @@
+$primary-color: rgb(0, 30, 71);
+$white: rgb(240, 240, 245);
+$global-radius: 1px;
+$subscription-form-bg: darken($primary-color, 20%);
+$subscription-form-color: $white;
+$subscription-form-padding: rem-calc(32);
+
+
+.simple-subscription-form {
+  background: $subscription-form-bg;
+  color: $subscription-form-color;
+  padding: $subscription-form-padding;
+  border-radius: $global-radius;
+
+  .button {
+    margin-bottom: 0;
+    border-radius: 0 $global-radius $global-radius 0;
+  }
+}

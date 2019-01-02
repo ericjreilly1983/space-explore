@@ -2,6 +2,8 @@
 <html>
 <head>
 	<title>Space Exploration by Eric</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Orbitron|Roboto+Mono" rel="stylesheet">
 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
@@ -145,7 +147,7 @@
 		padding-right: 5px;
 	}
 
-	#subscribe {
+/*	#subscribe {
 		background-color: gray;
 	}
 
@@ -170,8 +172,8 @@
 	}
 	#subscribe form input, #subscribe form label {
 		/*max-width: 25vw;*/
-	}
-
+/*	}
+*/
 
 
 	footer {
@@ -288,21 +290,21 @@
 	</div>
 </main>
 <section id = "subscribe">
-	<h2>Subscribe</h1>
-	<form>
-		<label class = "subscribe_label">First Name:</label>
-		<input type="text" name="" placeholder = "First Name">
-		<label class = "subscribe_label">Last Name:</label>
-		<input type="text" name="" placeholder = "Last Name">
-		<label class = "subscribe_label">Email:</label>
-		<input type="email" name="" placeholder= "Email">
-		<label class = "subscribe_label">Password</label>
-		<input type="password" name="" placeholder = "Enter Password" required placeholder = "Choose Password" minlength = "8"  pattern="(?=.*\d)(?=.*[\W_]).{8,}" >
-		<label class = "subscribe_label">Confirm Password</label>
-		<input type="password" placeholder="Re-Enter Password" required>
-		<div></div>
-		<button>Subscribe</button>
-	</form>
+	
+	<div class="simple-subscription-form">
+  	 <form>
+    	<h4>Subscribe</h4>
+    	<p>Receive updates and latest news direct from our team. Simply enter your email below :</p>
+      <div class="input-group">
+        <span class="input-group-label">
+         <i class="fa fa-envelope"></i>
+        </span>
+        <input class="input-group-field" type="email" placeholder="Email" required>
+        <button class="button">Sign up now</button>
+      </div>
+
+     </form>
+   </div>
 </section>
 <footer>
 	<span>Copyright 2019</span>

@@ -1,0 +1,10 @@
+.simple-subscription-form {
+  background: black;
+  color: #f0f0f5;
+  padding: rem-calc(32);
+  border-radius: 1px; }
+  .simple-subscription-form .button {
+    margin-bottom: 0;
+   }
+
+/*# sourceMappingURL=index.css.map */

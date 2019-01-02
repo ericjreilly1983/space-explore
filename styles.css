@@ -1,0 +1,51 @@
+.simple-subscription-form {
+  background: #0c3e5f;
+  color: #fefefe;
+  padding: 2rem;
+  border-radius: 0;
+}
+
+.simple-subscription-form .button {
+  margin-bottom: 0;
+  background-color: #1779ba;
+  vertical-align: middle;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0;
+  border-style: none;
+  position: relative;
+  right: 10px;
+  line-height: 1.5em;
+  color: white;
+}
+
+.input-group {
+	display: flex;
+	flex-flow: row;
+	line-height: 2em;
+	max-width: 960px;
+	margin: 0 auto;
+	margin-top: 10px;
+
+}
+
+.input-group > span {
+	background: gray;
+	color: black;
+	padding: 0 3px 0 3px;
+}
+
+.input-group > input[type="email"] {
+	flex: 5;
+}
+
+.input-group>button{
+	flex-grow: 1;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.input-group .input-group-label {
+	flex: 0.3;
+	text-align: center;
+}
