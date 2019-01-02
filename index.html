@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+	}
+	header {
+		background-color: black;
+		color: white;
+	}
+	header ul {
+		list-style: none;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+	header ul li {
+		padding: 1em;
+	}
+
+	div.heading {
+		text-transform: uppercase;
+		color: white;
+		background-image: url('images/stars.jpg');
+		height: 50vh;
+	}
+
+	div.heading h1 {
+		text-align: center;
+		padding-top: 25vh;
+	}
+
+	main {
+		background-color: black;
+		color: blue;
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5vh;
+	}
+
+	ul.body-list{
+		display: grid;
+		grid-gap: 5px;
+		grid-template-columns: repeat(2, minmax(200px, 1fr));
+		list-style: none;
+	}
+
+	ul h3 {
+		text-align: left;
+	}
+
+	ul img {
+		height: 100px;
+		width: 100px;
+		float: left;
+		margin-right: 1vw;
+	}
+
+	ul li p {
+		text-align: justify;
+	}
+
+	</style>
+</head>
+<body>
+<header>
+	<ul>
+		<li>Home</li>
+		<li>FAQ</li>
+		<li>Services</li>
+		<li>Support</li>
+	</ul>
+</header>
+<div class="heading">
+	<h1>Space Exploration</h1>
+</div>
+<main class = "body">
+	<div>
+		<ul class = "body-list">
+			<li class = "body-list-item">
+			 <h3>What's New?</h3>
+			 <img src="images/astronaut.jpg">
+			 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			 consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			 cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			 proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li class = "body-list-item">
+			<h3>About</h3>
+			<img src="images/earth.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li class = "body-list-item">
+			<h3>Forums</h3>
+			<img src="images/blackhole.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li class = "body-list-item">
+			<h3>Resources</h3>
+			<img src="images/gas.jpg">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+		</ul>
+	</div>
+</main>
+<footer>
+	<span>Copyright 2019</span>
+</footer>
+</body>
+</html>
